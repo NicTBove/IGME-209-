@@ -1,4 +1,15 @@
+// Authors: Rebecca Brown and Nic Bove
+// IGME 209.05
+// Project 1 - Part 1
+//
+
 #pragma once
+
+#ifdef MAZEWARS_EXPORTS
+#define MAZEWARS_API __declspec(dllexport)
+#else
+#define MAZEWARS_API __declspec(dllimport)
+#endif
 
 // Returns a string that has both team membeers' names.
 // Have the C string value return both team member names.
